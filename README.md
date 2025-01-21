@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tic-Tac-Toe Game
+
+![image](image.png)
+
+A modern implementation of the classic Tic-Tac-Toe game built with Next.js, React, TypeScript, and Tailwind CSS.
+
+## Features
+
+- Interactive game board
+- Modern and responsive UI
+- Built with TypeScript for type safety
+- State management using Zustand
+- Styled with Tailwind CSS and Radix UI components
+
+## Tech Stack
+
+- **Framework:** Next.js 15.1.5
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **State Management:** Zustand
+- **UI Components:** Radix UI
+- **Development Tools:**
+  - ESLint
+  - TurboPack
+  - PostCSS
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js (Latest LTS version recommended)
+- npm or yarn or bun package manager
+
+### Installation
+
+1. Clone the repository:
 
 ```bash
+git clone git@github.com:farasjibran/tic-tac-toe-nextjs.git
+cd tic-tac-toe
+```
+
+2. Install dependencies:
+
+```bash
+bun install
+# or
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
+
+```bash
+bun dev
+# or
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to play the game.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+tic-tac-toe/
+├── src/
+│   ├── app/              # Next.js app directory
+│   ├── components/       # React components
+│   │   ├── custom/      # Game-specific components
+│   │   └── ui/          # Reusable UI components
+│   ├── hooks/           # Custom React hooks
+│   └── lib/             # Utility functions
+├── public/              # Static files
+└── ...config files
+```
 
-## Learn More
+## Scripts
 
-To learn more about Next.js, take a look at the following resources:
+- `dev` - Run development server with TurboPack
+- `build` - Build the application for production
+- `start` - Start the production server
+- `lint` - Run ESLint for code linting
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open source and available under the MIT license.
